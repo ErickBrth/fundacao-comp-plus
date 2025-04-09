@@ -6,10 +6,10 @@ import { BookOpen, FileText, Video } from "lucide-react"
 
 export default function Recursos() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full">
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
@@ -26,7 +26,7 @@ export default function Recursos() {
 
       {/* Recursos Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <Tabs defaultValue="biblioteca" className="w-full">
             <TabsList className="grid w-full grid-cols-3">
               <TabsTrigger value="biblioteca">Biblioteca de Recursos</TabsTrigger>
@@ -218,8 +218,14 @@ export default function Recursos() {
                   </ul>
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative w-[600px] h-[400px]">
-                    <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                  <div className="relative w-full max-w-[600px] h-auto aspect-[3/2]">
+                    <svg
+                      width="600"
+                      height="400"
+                      viewBox="0 0 600 400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-full h-full"
+                    >
                       {/* Definição de um gradiente de fundo */}
                       <defs>
                         <linearGradient id="gradient-bg-recursos" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -363,7 +369,7 @@ export default function Recursos() {
 
       {/* CTA Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Contribua com Nossos Recursos</h2>
@@ -381,8 +387,14 @@ export default function Recursos() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-[500px] h-[300px]">
-                <svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+              <div className="relative w-full max-w-[500px] h-auto aspect-[5/3]">
+                <svg
+                  width="500"
+                  height="300"
+                  viewBox="0 0 500 300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-full h-full"
+                >
                   {/* Definição de um gradiente de fundo */}
                   <defs>
                     <linearGradient id="gradient-bg-cta" x1="0%" y1="0%" x2="100%" y2="100%">

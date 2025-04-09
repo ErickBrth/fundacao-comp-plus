@@ -1,15 +1,14 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { CalendarDays, ChevronRight, Code, GraduationCap, Lightbulb, Users } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full">
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-600 to-teal-500">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Fundação COMP+</h1>
@@ -32,58 +31,35 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-      {/* Definição de um gradiente de fundo */}
-      <defs>
-        <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#0056b3", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#00aaff", stopOpacity: 1 }} />
-        </linearGradient>
-      </defs>
-      {/* Fundo com o gradiente */}
-      <rect width="600" height="400" fill="url(#gradient-bg)" />
-      
-      {/* Elemento circular com contorno tracejado */}
-      <circle 
-        cx="300" 
-        cy="200" 
-        r="70" 
-        fill="none" 
-        stroke="#fff" 
-        strokeWidth="10" 
-        strokeDasharray="10,10" 
-      />
-      
-      {/* Símbolo de adição (+) centralizado */}
-      <line 
-        x1="300" 
-        y1="150" 
-        x2="300" 
-        y2="250" 
-        stroke="#fff" 
-        strokeWidth="10" 
-      />
-      <line 
-        x1="250" 
-        y1="200" 
-        x2="350" 
-        y2="200" 
-        stroke="#fff" 
-        strokeWidth="10" 
-      />
-      
-      {/* Texto com o nome da Fundação */}
-      <text 
-        x="300" 
-        y="380" 
-        fontFamily="Montserrat, sans-serif" 
-        fontSize="36" 
-        fill="#fff" 
-        textAnchor="middle"
-      >
-        COMP+
-      </text>
-    </svg>
+              <svg
+                width="600"
+                height="400"
+                viewBox="0 0 600 400"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full max-w-[600px] h-auto"
+              >
+                {/* Definição de um gradiente de fundo */}
+                <defs>
+                  <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: "#0056b3", stopOpacity: 1 }} />
+                    <stop offset="100%" style={{ stopColor: "#00aaff", stopOpacity: 1 }} />
+                  </linearGradient>
+                </defs>
+                {/* Fundo com o gradiente */}
+                <rect width="600" height="400" fill="url(#gradient-bg)" />
+
+                {/* Elemento circular com contorno tracejado */}
+                <circle cx="300" cy="200" r="70" fill="none" stroke="#fff" strokeWidth="10" strokeDasharray="10,10" />
+
+                {/* Símbolo de adição (+) centralizado */}
+                <line x1="300" y1="150" x2="300" y2="250" stroke="#fff" strokeWidth="10" />
+                <line x1="250" y1="200" x2="350" y2="200" stroke="#fff" strokeWidth="10" />
+
+                {/* Texto com o nome da Fundação */}
+                <text x="300" y="380" fontFamily="Montserrat, sans-serif" fontSize="36" fill="#fff" textAnchor="middle">
+                  COMP+
+                </text>
+              </svg>
             </div>
           </div>
         </div>
@@ -91,7 +67,7 @@ export default function Home() {
 
       {/* Sobre a Fundação */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Sobre a Fundação COMP+</h2>
@@ -113,7 +89,7 @@ export default function Home() {
 
       {/* Destaques dos Programas */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Nossos Programas</h2>
@@ -185,7 +161,7 @@ export default function Home() {
 
       {/* Eventos e Workshops */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Próximos Eventos</h2>
@@ -257,7 +233,7 @@ export default function Home() {
 
       {/* Depoimentos e Impacto */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Depoimentos</h2>

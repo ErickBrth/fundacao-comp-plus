@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -35,11 +34,11 @@ export function Header() {
         isScrolled ? "bg-white shadow-md" : "bg-white/80 backdrop-blur-sm",
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
+      <div className="container flex h-16 items-center justify-between px-4 md:px-6 max-w-full">
+        <Link href="/" className="flex items-center space-x-2 font-bold text-xl text-blue-600">
           COMP+
         </Link>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex md:flex-1 md:justify-end">
           <DesktopNav />
         </div>
         <div className="md:hidden">
@@ -52,8 +51,8 @@ export function Header() {
 
 function DesktopNav() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
+    <NavigationMenu className="justify-end">
+      <NavigationMenuList className="gap-1">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>Home</NavigationMenuLink>
@@ -105,7 +104,7 @@ function DesktopNav() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/doacoes" legacyBehavior passHref>
-            <Button variant="default" className="bg-blue-600 hover:bg-blue-700">
+            <Button variant="default" className="bg-blue-600 hover:bg-blue-700 ml-2">
               Doações
             </Button>
           </Link>
@@ -126,8 +125,8 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent side="right" className="w-[300px] sm:w-[400px]">
         <nav className="flex flex-col gap-4">
-          <Link href="/" className="flex items-center space-x-2 mb-6">
-            <Image src="/logo-comp-plus.svg" alt="Fundação COMP+" width={60} height={40} className="h-10 w-auto" />
+          <Link href="/" className="flex items-center space-x-2 mb-6 font-bold text-xl text-blue-600">
+            COMP+
           </Link>
           <Link href="/" className="text-lg font-medium">
             Home

@@ -1,25 +1,15 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-200">
-      <div className="container px-4 py-12 md:py-16 lg:py-20">
+    <footer className="bg-gray-900 text-gray-200 w-full">
+      <div className="container px-4 py-12 md:py-16 lg:py-20 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center">
-              <Image
-                src="/logo-comp-plus.svg"
-                alt="Fundação COMP+"
-                width={60}
-                height={40}
-                className="h-10 w-auto mr-2"
-              />
-              <h3 className="text-xl font-bold text-white">Fundação COMP+</h3>
-            </div>
+            <h3 className="text-xl font-bold">Fundação COMP+</h3>
             <p className="text-gray-400">
               Apoiando a pesquisa científica, desenvolvimento, inovação e prestação de serviços técnicos especializados
               desde 2012.
