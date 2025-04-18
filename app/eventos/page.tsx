@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CalendarDays, MapPin } from "lucide-react"
+import CalendarioEventos from "../components/CalendarioEventos"
 
 export default function Eventos() {
   return (
@@ -50,7 +51,7 @@ export default function Eventos() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Link href="/eventos/workshop-ia">
+                    <Link href="/eventos/inscricao?evento=workshop-ia">
                       <Button>Inscreva-se</Button>
                     </Link>
                   </CardFooter>
@@ -73,7 +74,7 @@ export default function Eventos() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Link href="/eventos/conferencia-seguranca">
+                    <Link href="/eventos/inscricao?evento=conferencia-seguranca">
                       <Button>Inscreva-se</Button>
                     </Link>
                   </CardFooter>
@@ -94,7 +95,7 @@ export default function Eventos() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Link href="/eventos/hackathon-sustentabilidade">
+                    <Link href="/eventos/inscricao?evento=hackathon-sustentabilidade">
                       <Button>Inscreva-se</Button>
                     </Link>
                   </CardFooter>
@@ -114,7 +115,7 @@ export default function Eventos() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Link href="/eventos/webinar-ciencia-dados">
+                    <Link href="/eventos/inscricao?evento=webinar-ciencia-dados">
                       <Button>Inscreva-se</Button>
                     </Link>
                   </CardFooter>
@@ -135,7 +136,7 @@ export default function Eventos() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Link href="/eventos/curso-dev-web">
+                    <Link href="/eventos/inscricao?evento=curso-dev-web">
                       <Button>Inscreva-se</Button>
                     </Link>
                   </CardFooter>
@@ -158,7 +159,7 @@ export default function Eventos() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Link href="/eventos/simposio-computacao">
+                    <Link href="/eventos/inscricao?evento=simposio-computacao">
                       <Button>Inscreva-se</Button>
                     </Link>
                   </CardFooter>
@@ -248,19 +249,10 @@ export default function Eventos() {
             </div>
           </div>
           <div className="mt-8 flex justify-center">
-            <Image
-              src="/placeholder.svg?height=500&width=800"
-              alt="Calendário de Eventos"
-              width={800}
-              height={500}
-              className="rounded-lg object-cover"
-            />
+            <CalendarioEventos />
+
           </div>
-          <div className="flex justify-center mt-8">
-            <Link href="/eventos/calendario">
-              <Button className="bg-blue-600 hover:bg-blue-700">Ver Calendário Completo</Button>
-            </Link>
-          </div>
+
         </div>
       </section>
 
@@ -286,7 +278,7 @@ export default function Eventos() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=300&width=500"
+                src="/evento_comp.png?height=300&width=500"
                 alt="Organize um Evento"
                 width={500}
                 height={300}

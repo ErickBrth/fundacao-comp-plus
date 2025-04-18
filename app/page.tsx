@@ -33,57 +33,57 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-      {/* Definição de um gradiente de fundo */}
-      <defs>
-        <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#0056b3", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#00aaff", stopOpacity: 1 }} />
-        </linearGradient>
-      </defs>
-      {/* Fundo com o gradiente */}
-      <rect width="600" height="400" fill="url(#gradient-bg)" />
-      
-      {/* Elemento circular com contorno tracejado */}
-      <circle 
-        cx="300" 
-        cy="200" 
-        r="70" 
-        fill="none" 
-        stroke="#fff" 
-        strokeWidth="10" 
-        strokeDasharray="10,10" 
-      />
-      
-      {/* Símbolo de adição (+) centralizado */}
-      <line 
-        x1="300" 
-        y1="150" 
-        x2="300" 
-        y2="250" 
-        stroke="#fff" 
-        strokeWidth="10" 
-      />
-      <line 
-        x1="250" 
-        y1="200" 
-        x2="350" 
-        y2="200" 
-        stroke="#fff" 
-        strokeWidth="10" 
-      />
-      
-      {/* Texto com o nome da Fundação */}
-      <text 
-        x="300" 
-        y="380" 
-        fontFamily="Montserrat, sans-serif" 
-        fontSize="36" 
-        fill="#fff" 
-        textAnchor="middle"
-      >
-        COMP+
-      </text>
-    </svg>
+                {/* Definição de um gradiente de fundo */}
+                <defs>
+                  <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: "#0056b3", stopOpacity: 1 }} />
+                    <stop offset="100%" style={{ stopColor: "#00aaff", stopOpacity: 1 }} />
+                  </linearGradient>
+                </defs>
+                {/* Fundo com o gradiente */}
+                <rect width="600" height="400" fill="url(#gradient-bg)" />
+
+                {/* Elemento circular com contorno tracejado */}
+                <circle
+                  cx="300"
+                  cy="200"
+                  r="70"
+                  fill="none"
+                  stroke="#fff"
+                  strokeWidth="10"
+                  strokeDasharray="10,10"
+                />
+
+                {/* Símbolo de adição (+) centralizado */}
+                <line
+                  x1="300"
+                  y1="150"
+                  x2="300"
+                  y2="250"
+                  stroke="#fff"
+                  strokeWidth="10"
+                />
+                <line
+                  x1="250"
+                  y1="200"
+                  x2="350"
+                  y2="200"
+                  stroke="#fff"
+                  strokeWidth="10"
+                />
+
+                {/* Texto com o nome da Fundação */}
+                <text
+                  x="300"
+                  y="380"
+                  fontFamily="Montserrat, sans-serif"
+                  fontSize="36"
+                  fill="#fff"
+                  textAnchor="middle"
+                >
+                  COMP+
+                </text>
+              </svg>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function Home() {
                 </p>
               </CardContent>
               <CardFooter>
-                <Link href="/programas-projetos/bolsas">
+                <Link href="/bolsas">
                   <Button variant="outline">Saiba Mais</Button>
                 </Link>
               </CardFooter>
@@ -156,7 +156,7 @@ export default function Home() {
                 </p>
               </CardContent>
               <CardFooter>
-                <Link href="/programas-projetos/hackathons">
+                <Link href="/hackathons">
                   <Button variant="outline">Saiba Mais</Button>
                 </Link>
               </CardFooter>
@@ -174,7 +174,7 @@ export default function Home() {
                 </p>
               </CardContent>
               <CardFooter>
-                <Link href="/programas-projetos/inclusao-digital">
+                <Link href="/inclusao-digital">
                   <Button variant="outline">Saiba Mais</Button>
                 </Link>
               </CardFooter>
@@ -207,7 +207,7 @@ export default function Home() {
                 <p>Um workshop prático sobre as mais recentes técnicas de IA e suas aplicações no mercado atual.</p>
               </CardContent>
               <CardFooter>
-                <Link href="/eventos/workshop-ia">
+                <Link href="/eventos/inscricao?evento=workshop-ia">
                   <Button>Inscreva-se</Button>
                 </Link>
               </CardFooter>
@@ -224,7 +224,7 @@ export default function Home() {
                 <p>Especialistas nacionais e internacionais discutem os desafios atuais da segurança cibernética.</p>
               </CardContent>
               <CardFooter>
-                <Link href="/eventos/conferencia-seguranca">
+                <Link href="/eventos/inscricao?evento=conferencia-seguranca">
                   <Button>Inscreva-se</Button>
                 </Link>
               </CardFooter>
@@ -241,7 +241,7 @@ export default function Home() {
                 <p>Desenvolva soluções tecnológicas para problemas ambientais em um evento de 48 horas.</p>
               </CardContent>
               <CardFooter>
-                <Link href="/eventos/hackathon-sustentabilidade">
+                <Link href="/eventos/inscricao?evento=hackathon-sustentabilidade">
                   <Button>Inscreva-se</Button>
                 </Link>
               </CardFooter>

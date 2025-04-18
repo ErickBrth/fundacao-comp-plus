@@ -12,7 +12,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <Image
-                src="/logo-comp-plus.svg"
+                src="/logo-comp.png"
                 alt="Fundação COMP+"
                 width={60}
                 height={40}

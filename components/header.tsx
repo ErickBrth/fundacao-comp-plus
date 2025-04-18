@@ -68,13 +68,13 @@ function DesktopNav() {
           <NavigationMenuTrigger>Programas e Projetos</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              <ListItem href="/programas-projetos/bolsas" title="Bolsas de Estudo">
+              <ListItem href="/bolsas" title="Bolsas de Estudo">
                 Apoio financeiro para estudantes de computação.
               </ListItem>
-              <ListItem href="/programas-projetos/hackathons" title="Hackathons">
+              <ListItem href="/hackathons" title="Hackathons">
                 Eventos de programação intensiva para resolver problemas reais.
               </ListItem>
-              <ListItem href="/programas-projetos/inclusao-digital" title="Inclusão Digital">
+              <ListItem href="/inclusao-digital" title="Inclusão Digital">
                 Iniciativas para democratizar o acesso à tecnologia.
               </ListItem>
               <ListItem href="/programas-projetos" title="Ver Todos">

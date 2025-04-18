@@ -73,58 +73,58 @@ export default function Contato() {
                 <div className="grid grid-cols-1 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="nome">Nome</Label>
-                    <Input 
-                      id="nome" 
-                      name="nome" 
-                      placeholder="Seu nome completo" 
+                    <Input
+                      id="nome"
+                      name="nome"
+                      placeholder="Seu nome completo"
                       value={formData.nome}
                       onChange={handleChange}
-                      required 
+                      required
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">E-mail</Label>
-                    <Input 
-                      id="email" 
-                      name="email" 
-                      type="email" 
-                      placeholder="seu.email@exemplo.com" 
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="seu.email@exemplo.com"
                       value={formData.email}
                       onChange={handleChange}
-                      required 
+                      required
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="telefone">Telefone</Label>
-                    <Input 
-                      id="telefone" 
-                      name="telefone" 
-                      placeholder="(00) 00000-0000" 
+                    <Input
+                      id="telefone"
+                      name="telefone"
+                      placeholder="(00) 00000-0000"
                       value={formData.telefone}
                       onChange={handleChange}
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="assunto">Assunto</Label>
-                    <Input 
-                      id="assunto" 
-                      name="assunto" 
-                      placeholder="Assunto da mensagem" 
+                    <Input
+                      id="assunto"
+                      name="assunto"
+                      placeholder="Assunto da mensagem"
                       value={formData.assunto}
                       onChange={handleChange}
-                      required 
+                      required
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="mensagem">Mensagem</Label>
-                    <Textarea 
-                      id="mensagem" 
-                      name="mensagem" 
-                      placeholder="Digite sua mensagem" 
+                    <Textarea
+                      id="mensagem"
+                      name="mensagem"
+                      placeholder="Digite sua mensagem"
                       value={formData.mensagem}
                       onChange={handleChange}
-                      required 
-                      className="min-h-[150px]" 
+                      required
+                      className="min-h-[150px]"
                     />
                   </div>
                 </div>
@@ -158,4 +158,20 @@ export default function Contato() {
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="bg-blue-100 p-3 rounded-lg">
-                        \
+                        <MapPin className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium">Telefone</h3>
+                        <p className="text-muted-foreground">(83) 3333-3333</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

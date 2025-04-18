@@ -46,19 +46,19 @@ export default function Parcerias() {
                   <h3 className="text-xl font-bold">Parceiros Acadêmicos</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="UFCG" className="mb-4" />
+                      <Image src="/UfcgBrasao.jpg" width="120" height="60" alt="UFCG" className="mb-4" />
                       <h4 className="text-center font-medium">Universidade Federal de Campina Grande</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="UEPB" className="mb-4" />
+                      <Image src="/brasaoUepb.jpeg" width="120" height="60" alt="UEPB" className="mb-4" />
                       <h4 className="text-center font-medium">Universidade Estadual da Paraíba</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="IFPB" className="mb-4" />
+                      <Image src="/brasaoIfpb.png" width="120" height="60" alt="IFPB" className="mb-4" />
                       <h4 className="text-center font-medium">Instituto Federal da Paraíba</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="USP" className="mb-4" />
+                      <Image src="/Brasão_USP.svg" width="120" height="60" alt="USP" className="mb-4" />
                       <h4 className="text-center font-medium">Universidade de São Paulo</h4>
                     </Card>
                   </div>
@@ -67,7 +67,7 @@ export default function Parcerias() {
                   <h3 className="text-xl font-bold">Parceiros Empresariais</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Empresa 1" className="mb-4" />
+                      <Image src="/tsSolution.jpeg" width="120" height="60" alt="Empresa 1" className="mb-4" />
                       <h4 className="text-center font-medium">TechSolutions Brasil</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
@@ -75,11 +75,11 @@ export default function Parcerias() {
                       <h4 className="text-center font-medium">Inovação Digital</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Empresa 3" className="mb-4" />
+                      <Image src="/datasystem.png" width="120" height="60" alt="Empresa 3" className="mb-4" />
                       <h4 className="text-center font-medium">DataSystems</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Empresa 4" className="mb-4" />
+                      <Image src="/cloudTech.png" width="120" height="60" alt="Empresa 4" className="mb-4" />
                       <h4 className="text-center font-medium">CloudTech Brasil</h4>
                     </Card>
                   </div>
@@ -88,19 +88,19 @@ export default function Parcerias() {
                   <h3 className="text-xl font-bold">Parceiros Institucionais</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Instituição 1" className="mb-4" />
+                      <Image src="/ministerioTecnologia.png" width="120" height="60" alt="Instituição 1" className="mb-4" />
                       <h4 className="text-center font-medium">Ministério da Ciência e Tecnologia</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Instituição 2" className="mb-4" />
+                      <Image src="/cnpq.jpg" width="120" height="60" alt="Instituição 2" className="mb-4" />
                       <h4 className="text-center font-medium">CNPq</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Instituição 3" className="mb-4" />
+                      <Image src="/finep.png" width="120" height="60" alt="Instituição 3" className="mb-4" />
                       <h4 className="text-center font-medium">FINEP</h4>
                     </Card>
                     <Card className="flex flex-col items-center justify-center p-6">
-                      <Image src="/placeholder-logo.svg" width="120" height="60" alt="Instituição 4" className="mb-4" />
+                      <Image src="/pb.png" width="120" height="60" alt="Instituição 4" className="mb-4" />
                       <h4 className="text-center font-medium">Governo do Estado da Paraíba</h4>
                     </Card>
                   </div>
@@ -185,7 +185,7 @@ export default function Parcerias() {
                 </div>
                 <div className="flex justify-center">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/parceiro.png?height=400&width=600"
                     alt="Parcerias"
                     width={600}
                     height={400}
